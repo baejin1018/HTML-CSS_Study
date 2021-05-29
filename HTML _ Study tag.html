@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        table, td{
+        table, td, th{
             border: 1px solid black;
         }
     </style>
@@ -18,7 +18,7 @@
     <!-- <h2> </h2> 사이에 있는것은 h1보다 작은 소제목 -->
     우리 모두는 <strong>자신의 힘</strong>으로 발견한 내용을 가장 쉽게 익힌다.
     <!--<strong> </strong> 사이에 있는 글자는 진해짐(강조) /가 없는태그는 시작태그 /가있는 태그는 닫히는 태그 -->
-    <p>텍스트________</p>
+    <p>텍스트</p>
     <!-- 텍스트를 표시할때 가장많이 사용하는 태그  <p> 에서 </p>까지 줄바꿈 없이 한줄로 표시 -->
     <br>
      <!--br은 줄바꾸기 태그다 -->
@@ -100,18 +100,121 @@
 
     <!-- 표를 만드는 태그 -->
 
-    <table>
-        <tr>
-            <td>내용</td>
-            <td>내용</td>
-            <td>내용</td>
-        </tr>
-        <tr>
-            <td>내용</td>
-            <td>내용</td>
-            <td>내용</td>
-        </tr>
-    </table>
+<table>
+    <tr>
+        <th>제목셀</th>
+        <td>1행 2열</td>
+        <td>1행 3열</td>
+    </tr>
+    <tr>
+        <th>제목셀</th>
+        <td>2행 2열</td>
+        <td>2행 3열</td>
+    </tr>
+</table>
+
+<table>
+    <tr>
+        <th>제목셀</th>
+        <td>1행 2열</td>
+        <td>1행 3열</td>
+    </tr>
+    <tr>
+        <th>제목셀</th>
+        <td colspan="2">2행 2열</td>
+        <td>2행 3열</td>
+    </tr>
+    <!-- colspan = " 합칠 셀의 개수" : 만약 합칠 셀의 개수에 2를 적으면 가로로 2칸이 합쳐진다 -->
+</table>
+
+<p id="summary">
+  표설명__________________________________________________
+</p>
+<!-- aria-describedby = "이름" 이름이 같은거끼리 이어준다 -->
+<table aria-describedby="summary">
+    <caption>표제목</caption>
+    <tr>
+        <th>제목셀</th>
+        <td rowspan="2">1행 2열</td>
+        <td>1행 3열</td>
+    </tr>
+    <tr>
+        <th>제목셀</th>
+        <td>2행 2열</td>
+        <td>2행 3열</td>
+    </tr>
+
+    <!-- rowspan = " 합칠 셀의 개수" : 만약 합칠 셀의 개수에 2를 적으면 세로로 2칸이 합쳐진다 -->
+    <!--caption은 표제목을 쓰는 테그이다  -->
+
+<table>
+    <caption>colgroup 연습</caption>
+    <colgroup>
+    <col><!-- 열개수를 맞추기위해 넣은 태그 -->
+    <col span="2" style="background-color: blue;"><!-- 2,3 열에 파란배경지정  -->
+    <col style="background-color: yellow;"> <!--네 번째 열에 노란색 배경 지정-->
+    </colgroup>
+    <tr>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+    </tr>
+    <tr>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+    </tr>
+</table>    
+
+<!-- 이미지와 하이퍼 링크 -->
+
+<img src="https://th.bing.com/th/id/OIP.3
+NvolQokSWeRQaSNkTygJwHaEK?pid=ImgDet&rs=1"alt="HTMl사진">
+<!-- img scr = " 경로나 링크" 하면 그 경로나 링크의 사진이보이고 
+art ="글" art=" " 안의 내용이 사진이 로딩되기 전까지 보인다 -->
+<figure>
+    <img src="https://th.bing.com/th/id/OIP.3NvolQokSWeRQaSNkTygJwHaEK?pid=ImgDet&rs=1
+    " width="250" height="400">
+    <figcaption>HTML5 사진</figcaption>
+</figure>
+<!-- width 를 늘리면 가로가 늘어나고 height를 늘리면 세로가 늘어난다 -->
+<!-- figure 는 사진이나 비디오 파일등을 한덩어리로 묶어주는태그 -->
+<!-- figcaption은 사진설명을 적는 태그 -->
+<!-- 
+<a href="이미지링크"[속성="속성값"]>텍스트</a> -->
+<!-- 속서안에들어가는 것들
+href 링크한 문서나 사이트의 주소를 입력합니다 
+target 링크한 내용이 표시될 위치를 지정합니다
+download 링크한 내용을 보여주는 것이아니라 다운로드
+rel 현재문서와 링크한문서의 관계를 알려준다
+hreflang 링크한 문서의 언어를 지정합니다
+type 링크한 문서의 파일 유형을 알려준다-->
+<a href="https://th.bing.com/th/id/OIP.3NvolQokSWeRQaSNkTygJwHaEK?pid=ImgDet&rs=1">HTMl</a>
+<!-- 텍스트 하이퍼링크 -->
+<h1>이미지 하이퍼링크</h1>
+<a href="https://www.naver.com/">
+<img src="https://th.bing.com/th/id/OIP.3NvolQokSWeRQaSNkTygJwHaEK?pid=ImgDet&rs=1"></a>
+<!-- 이미지 하이퍼링크 -->
+
+<!-- 텍스트 링크 밑줄 제거와 글자 색 만들기 -->
+<style>
+    a{
+        text-decoration: none;/* 하이퍼링크하면 생기는 밑줄을 제거  */
+        color: blueviolet;
+    }
+</style>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
 </body>
 </html>
-
