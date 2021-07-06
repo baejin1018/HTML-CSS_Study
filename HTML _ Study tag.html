@@ -205,16 +205,60 @@ type 링크한 문서의 파일 유형을 알려준다-->
         color: blueviolet;
     }
 </style>
+<br>
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
+<!-- iframe -->
+<h1>iframe</h1>
+<iframe src="https://poro.gg/" width="500" height="500"></iframe>
+<br>
+
+<h1>앵커 만들기</h1>
+<a href="#summary">연결한 앵커로 이동</a>
+
+<div id="sns">
+    <h1>SNS</h1>
+    <ul>
+        <li><a href="https://www.facebook.com/profile.php?id=100019962525501" target="_blank">facebook</a></li>
+    </ul>
+</div>
+<br>
+<h1>map,area태그</h1>
+<map name="과일">
+    <area shape="rect" coords="0,0,80,100" href="https://www.bing.com/images/search?q=%ea%b7%a4&form=HDRSC2&first=1&tsc=ImageBasicHover" alt="">
+</map>
+<img src="https://th.bing.com/th/id/OIP.bk5LlD9ezp77rFWfMb2jiwHaDl?w=331&h=169&c=7&o=5&pid=1.7" usemap="#과일">
+<!-- 0,0 부터 80,100 위치까지의 사각형 형태의 영역을 누르면 걸어둔 링크로 이동 -->
+
+<!-- 폼만들기 -->
+<h1>폼 만들기</h1>
+<form action="search.php" method="POST" autocomplete="on">
+    <input type="text" title="검색">
+    <input type="submit" value="검색">
+</form>
+
+<!-- label -->
+<label>아이디<input type="text"></label>
+<br>
+<label>비밀번호<input type="text"></label>
+
+<!-- 다른방법 -->
+<label for="id">아이디</label>
+<input type="text" id ="id">
+
+<form>
+    <h1>수강분야 </h1>
+    <ul>
+        <li><input type="checkbox" value="grm">문법</li>
+        <li><input type="checkbox" value="wr">작문</li>
+        <li><input type="checkbox" value="rd">독해</li>
+    </ul>
+    <h1>수강과목</h1>
+    <ul>
+        <li><label><input type="radio" name ="subject" value ="eng">영어회화</label></li>
+        <li><label><input type="radio" name ="subject" value ="ch">중국어 회화</label></li>
+        <li><label><input type="radio" name ="subject" value ="jp">일어회화</label></li>
+    </ul>
+</form>
+
 </body>
 </html>
