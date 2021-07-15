@@ -410,5 +410,72 @@ type 링크한 문서의 파일 유형을 알려준다-->
 <form>
     <input type="button" value="닫기" onclick="window.close()">
 </form>
+
+<h1>여름방학 특강신청</h1>
+<form action="#">
+    <fieldset>
+        <legend>수강과목</legend>
+        <ul>
+            <li><label>이름 <input type="text" autofocus required></label> </li>
+            <li><label>학번<input type="text" placeholder="하이폰없이 입력"></label></li>
+            <li> <label> 학과
+                <select name="b">
+                <option value="컴퓨터 공학과" selected >컴퓨터 공학과</option>
+                <option value="금">금</option>
+            </label></li>
+            <li><input type="submit" value="submit"></li>
+        </select> 
+        </ul>
+    </fieldset>
+</form>
+
+<fieldset>
+    <legend>수강과목</legend>
+    <label for="subj">영어회화 초급</label>
+    <input type="text" id="subj" value="오전 9:00~11:00" readonly>
+</fieldset>
+
+<h1>회원 가입을 환영합니다</h1>
+<form>
+    <ul>
+        <li>  <label>아이디<input type="text" id="user_id" size="10"  minlength="4" maxlength="15"></label>  </li>
+        <li> <input type="submit" value="제출"> </li>
+    </ul>
+</form>
+
+<fieldset>
+    <legend>수강신청인</legend>
+    <label for="class">학과</label>
+    <select id="class" multiple size="5">
+        <option value="archi">건축공학과</option>
+        <option value="mechi">기계공학과</option>
+        <option value="indust">산업공학과</option>
+    </select>
+</fieldset>
+
+<fieldset>
+    <input type="text" id="interest" list="cho">
+    <datalist id="cho">
+        <option value="gram">문법</option>
+        <option value="voca">어휘</option>
+    </datalist>
+    <br>
+    <textarea name="intro" cols="60" rows="5">
+        가나다라마바사
+        아자차카파타하
+
+        아야어요우유으이
+    </textarea>
+</fieldset>
+ 
+<button type="submit" class="subm">
+    <img src="https://media.istockphoto.com/vectors/data-transfer-icon-vector-from-px-network-and-communication-concept-vector-id1271581333" width="10" height="10" alt="">전송하기
+</button>
 </body>
+<form oninput="result.value=parseInt(num1.value)+parseInt(num2.value)">
+    <input type="number" name="num1" value="0">
+    +<input type="number" name="num2" value="0">
+    =<output name="result" for="num"></output>
+    <script src=""></script>
+</form>
 </html>
