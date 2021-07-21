@@ -974,7 +974,7 @@
 </body>
 </html> -->
 <!-- ============================================================================= -->
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -982,28 +982,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        .name{
+        div,h1{
             box-sizing: border-box;
-            width: 800px;
             border: 2px solid black;
-            padding: 40px;
-            margin: 20px;
+        }
+        .name{
+            width: 800px;
+            padding: 20px;
+            margin: 20px
         }
         .main{
-            box-sizing: border-box;
             width: 600px;
-            border: 2px solid black;
-            padding: 40px;
-            margin: 20px;
+            padding: 20px;
+            margin-bottom: 20px;
+            margin-left: 20px;
+            float: left;
         }
         .side{
-            box-sizing: border-box;
-            width: 30%;
-            height: 200px;
-            border: 2px solid black;
-            padding: 40px;
-            margin: 20px;
+            width: 200px;
+            padding: 10px;
+            margin-bottom: 20px;
+            margin-right: 120px;
             float: right;
+        }
+        .puter{
+            clear: both;
+            width: 800px;
+            padding: 20px;
+            margin: 20px
         }
     </style>
 </head>
@@ -1022,7 +1028,205 @@
             <li>4</li>
         </ul>
     </div>
-    <h2>푸터</h2>
-    <p>내용</p>
+    <div class="puter">
+         <h2>푸터</h2>
+        <p>내용</p>
+    </div>
+</body>
+</html> -->
+<!-- ============================================================================= -->
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            float: left;
+            width: 100px;
+            background: yellow;
+            margin-right: 10px;
+            padding: 20px;
+        }
+        .box2{
+            position: relative;
+            left: -50px;
+            top: 30px;
+            width: 300px;
+            background: blue;
+            float: left;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">박스1</div>
+    <div class="box2">박스2</div>
+</body>
+</html> -->
+<!-- ============================================================================= -->
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #wrap{
+            position: relative;
+            width: 300px;
+            height: 300px;
+            border: 1px solid black;
+        }
+        .box{
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            background: #0094ff;
+        }
+        #crd1{top: 0; left: 0;}
+        #crd2{top: 0; right: 0;}
+        #crd3{bottom: 0; left: 0;}
+        #crd4{bottom: 0; right: 0;}
+        #crd5{top: 100px; left: 100px;}
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <div class="box" id="crd1"></div>
+        <div class="box" id="crd2"></div>
+        <div class="box" id="crd3"></div>
+        <div class="box" id="crd4"></div>
+        <div class="box" id="crd5"></div>
+
+    </div>
+</body>
+</html> -->
+<!-- ============================================================================= -->
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #fx{
+            position: fixed;
+            top: 5px;
+            right: 5px;
+            width:  50px;
+            height: 50px;
+            background: orange;
+        }
+        #content{
+            width: 400px;
+        }
+    </style>
+</head>
+<body>
+    <div id="fx"></div>
+    <div id="content">
+        <p>fixed값을 ... 됩니다</p>
+    </div>
+</body>
+</html> -->
+<!-- ============================================================================= -->
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img{
+            margin: 10px;
+            padding: 5px;
+            border: 1px solid #000;
+        }
+        .hide{
+            visibility: hidden;
+        }
+    </style>
+</head>
+<body>
+    <img src="https://github.com/funnycom/html5-css3/blob/master/09/images/pic1.jpg?raw=true" alt="">
+    <img src="https://github.com/funnycom/html5-css3/blob/master/09/images/pic2.jpg?raw=true" class="hide" alt="">
+    <img src="https://github.com/funnycom/html5-css3/blob/master/09/images/pic3.jpg?raw=true" alt="">
+</body>
+</html> -->
+<!-- ============================================================================= -->
+<!-- <!doctype html>
+<html lang="ko">
+	<head>
+		<meta charset="utf-8">
+		<title>z-index 속성</title>
+		<style>
+			div#wrapper {
+				position: relative;
+			}
+			.box {
+				position:absolute;
+				width:100px;
+				height:100px;
+				border:1px solid black;
+				font-size:26px;
+			}
+			#b1 {				
+				left:50px;
+				top:50px;
+				background:#ff0000;
+				z-index:1;
+			}
+			#b2 {				
+				left:110px;
+				top:70px;
+				background:#ffd800;
+				z-index:3;
+			}
+			#b3 {
+				left:70px;
+				top:110px;
+				background:#0094ff;
+				z-index:1;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="wrapper">
+			<div id="b1" class="box">1</div>
+			<div id="b2" class="box">2</div>
+			<div id="b3" class="box">3</div>
+		</div>
+	</body>
+</html> -->
+<!-- ============================================================================= -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .m{
+            /* column-width: 120px; 단 너비를 지정 */
+            column-count: 3;/*단 개수를 지정*/
+            column-rule: 2px dotted black;
+            text-align: justify;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="m">
+        <p><b>코코넛 오일 </b>: 남미 파나마에서는 “코코넛오일 한 컵이면 모든 병이 낫는다”라고 이야기할 정도로 그 효능이 뛰어나다. 코코넛 오일에 들어있는 중사슬 지방산은 콜레스테롤 수치에 나쁜 영향을 주지 않는 건강한 지방산이다. 또 라우르산이 풍부해 세균을 물리치고 염증을 가라앉히는 효과가 있다. 하루 권장량은 성인기준 2~4스푼(30~40mL) 정도이다.</p>
+		<p><b>블루베리 </b>: 블루베리는 우리 몸이 산화하는 현상을 막아주는 '항산화 물질'이 가장 많은 식품으로 알려졌다. 미국 농무부 인간영양연구소에서 밝힌 자료에 따르면 블루베리의 '안토시아닌'이라는 물질은 시력 향상에 뛰어난 효과가 있다. 그뿐만 아니라 다이어트에도 좋다. 블루베리의 폴리페놀 성분은 체내 지방세포를 녹여주는 역할을 한다. 하루 권장량은 성인기준 50g 전후로, 20~30알 정도이다.</p>
+		<p><b>아몬드 </b>: 혈관질환에 좋은 오메가3, 섬유소, 비타민 E가 풍부해 항산화 효과가 높으며 콜레스테롤 수치를 낮추는 L-아르기닌 등의 좋은 영양소도 들어 있다. 또한, 식욕을 감소시키고 뇌 내 행복감을 촉진하는 세로토닌 분비를 증가시키는 것으로 나타났다. 특히 껍질에 비타민 E, 플라보노이드, 카테킨 등의 항산화 성분이 풍부하니 껍질째 먹는 것이 좋다. 하루 권장량은 30g(23알 내외) 정도이며, 과도하게 섭취하면 장의 흡수기능이 저하되니 주의해야 한다.</p>
+	</div>
 </body>
 </html>
