@@ -1562,7 +1562,7 @@
  </body>
  </html> -->
  <!-- ============================================================================= -->
- <!DOCTYPE html>
+ <!-- <!DOCTYPE html>
  <html lang="en">
  <head>
      <meta charset="UTF-8">
@@ -1570,13 +1570,22 @@
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
      <title>Document</title>
      <style>
-          a[href] {
-		 background:yellow;
-    	 }
-         li{
-             width: 100px;
-             height: 30px;
-         }
+             ul {
+            list-style:none;
+        }
+        li {
+            width:120px;	 
+            display:inline-block;
+            margin:10px;
+        }
+            li a {
+                padding: 20px;
+                font-size: 14px;
+                color: blue;
+            }
+        a[href] {
+            background:yellow;
+        }
      </style>
  </head>
  <body>
@@ -1588,5 +1597,352 @@
          <li><a href="#"></a> 메뉴 4</li>
      </ul>
  </body>
- </html>
+ </html> -->
  <!-- ============================================================================= -->
+ <!-- <!DOCTYPE html>
+ <html lang="en">
+ <head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+     <style>
+         ul{
+             list-style: none;
+         }
+         a{
+            text-decoration: none;
+         }
+         a[target="_blank"]{
+             padding-right: 30px;
+             background: url(https://github.com/funnycom/html5-css3/blob/master/12/images/newwindow.png?raw=true) no-repeat center right;
+         }
+         
+     </style>
+ </head>
+ <body>
+     <h1>HRML5 표준안 사이트</h1>
+     <ul>
+         <li><a href="http://www.w3c.org/TR/html" target="_blank">HTML</a></li>
+         <li><a href="http://www.w3c.org/TR/selectors" >CSS Selector Level 3</a></li>
+         <li><a href="http://www.w3c.org/TR/css3-mediaqueries">미디어 쿼리</a></li>
+     </ul>
+ </body>
+ </html> -->
+ <!-- ============================================================================= -->
+ <!-- <!DOCTYPE html>
+ <html lang="en">
+ <head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+     <style>
+         .flat{
+             background: blue;
+             color: white;
+         }
+        [ class~="button"]{
+            border: 2px solid black;
+            box-shadow: rgba(0, 0, 0, 4) 5px 5px;
+         }
+         ul{
+            list-style: none;
+         }
+         a{
+             text-decoration: none;
+         }
+     </style>
+ </head>
+ <body>
+     <ul>
+         <li><a href="#">메뉴 1</a></li>
+         <li><a href="#">메뉴 2</a></li>
+         <li><a href="#" class="button">메뉴 3</a></li>
+         <li><a href="#" class="flat button">메뉴 4</a></li>
+     </ul>
+ </body>
+ </html> -->
+ <!-- ============================================================================= -->
+ <!-- <!DOCTYPE html>
+ <html lang="en">
+ <head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+     <style>
+         a[title |="us"]{
+             background: url(https://github.com/funnycom/html5-css3/blob/master/12/images/us.png?raw=true) no-repeat left center;
+             padding: 5px 25px;
+         }
+         a[title |="jap"]{
+             background: url(https://github.com/funnycom/html5-css3/blob/master/12/images/jp.png?raw=true) no-repeat left center;
+             padding: 5px 25px;
+         }
+     </style>
+ </head>
+ <body>
+     <ul>
+         <li>외국어 서비스 :</li>
+         <li><a href="#" title="us">영어</a></li>
+         <li><a href="#" title="us-english">영어</a></li>
+         <li><a href="#" title="jap-japanese">일본</a></li>
+     </ul>
+     
+ </body>
+ </html> -->
+ <!-- ============================================================================= -->
+ <!-- <!DOCTYPE html>
+ <html lang="en">
+ <head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+     <style>
+         a[title ^="eng"]{
+             background: url(https://github.com/funnycom/html5-css3/blob/master/12/images/us.png?raw=true) no-repeat left center;
+             padding: 5px 25px;
+         }
+         a[title ^="jap"]{
+             background: url(https://github.com/funnycom/html5-css3/blob/master/12/images/jp.png?raw=true) no-repeat left center;
+             padding: 5px 25px;
+         }
+         a[title ^="chin"]{
+             background: url(https://github.com/funnycom/html5-css3/blob/master/12/images/ch.png?raw=true) no-repeat left center;
+             padding: 5px 25px;
+         }
+     </style>
+ </head>
+ <body>
+     <ul>
+         <li>외국어 서비스 :</li>
+         <li><a href="#" title="chinese">중국어</a></li>
+         <li><a href="#" title="english">영어</a></li>
+         <li><a href="#" title="japanese">일본</a></li>
+     </ul>
+     
+ </body>
+ </html> -->
+ <!-- ============================================================================= -->
+ <!-- <!DOCTYPE html>
+ <html lang="en">
+ <head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+     <style>
+         a[href $="hwp"]{
+             background: url(https://github.com/funnycom/html5-css3/blob/master/12/images/hwp_icon.gif?raw=true) center right no-repeat;
+            padding-right: 25px;
+        }
+        a[href $="xls"]{
+             background: url(https://github.com/funnycom/html5-css3/blob/master/12/images/excel_icon.gif?raw=true) center right no-repeat;
+            padding-right: 25px;
+        }
+     </style>
+ </head>
+ <body>
+     <h3>회사 소개 파일 다운 받기</h3>
+     <ul>
+         <li><a href="intro.hwp">hwp 파일</a></li>
+         <li><a href="intro.xls">엑셀 파일</a></li>
+     </ul>
+ </body>
+ </html> -->
+ <!-- ============================================================================= -->
+ <!-- <!DOCTYPE html>
+ <html lang="en">
+ <head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+     <style>
+         [href *= "w3c"]{
+             background: blue;
+             color: white;
+         }
+     </style>
+ </head>
+ <body>
+    <h1>HTML5 참고 사이트 </h1>
+	<p>(아래 링크 중 파란색 배경의 링크는 W3C 사이트로 연결됩니다.)</p>
+	<ul>
+		<li><a href="http://www.w3c.org/TR/html">HTML 표준안 사이트</a></li>
+		<li><a href="http://www.webplatform.org">튜토리얼과 아티클</a></li>	
+		<li><a href="http://caniuse.com">HTML 지원 여부 체크</a></li>
+		<li><a href="http://www.w3c.org/TR/css3-mediaqueries">미디어쿼리</a></li>		
+	</ul>
+ </body>
+ </html> -->
+ <!-- ============================================================================= -->
+ <!-- <!DOCTYPE html>
+ <html lang="en">
+ <head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+     <style>
+         .navi a:link, .navi a:visited{
+             font-size: 14px;
+             padding: 10px;
+             text-decoration: none;
+         }
+         .navi a:hover, .navi a:focus{
+             background-color: #222;
+             color: #fff;
+         }
+         .navi a:active{
+             background-color: #f00;
+         }
+     </style>
+ </head>
+ <body>
+     <nav class="navi">
+        <ul>
+            <li><a href="#"> 이용안내</a></li>
+            <li><a href="#"> 객실 소개</a></li>
+            <li><a href="#"> 예약 방법및 요금</a></li>
+            <li><a href="#"> 예약하기</a></li>
+        </ul>
+    </nav>
+ </body>
+ </html> -->
+ <!-- ============================================================================= -->
+ <!-- <!DOCTYPE html>
+ <html lang="en">
+ <head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+     <style>
+         input:disabled{
+             background: #ddd;
+             border: 1px solid black;
+         }
+         input:checked+span{
+             color: blue;
+         }
+     </style>
+ </head>
+ <body>
+    <form>
+        <fieldset>
+            <legend>사용자 정보</legend>
+            <label>이름 <input type="text" disabled></label>
+        </fieldset>
+        <fieldset>
+            <legend>신청 과목</legend>
+            <p>이 달에 신청할 과목을 선택하세요</p>
+            <label><input type="radio" name="subject" value="speaking"><span>회화</span></label>
+            <label><input type="radio" name="subject" value="grammar"><span>문법</span></label>
+            <label><input type="radio" name="subject" value="writing"><span>작문</span></label> 
+        </fieldset>		
+    </form>
+ </body>
+ </html> -->
+<!-- ============================================================================= -->
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table tr:nth-child(2n+1){
+            background: lightgray;
+            color: black;
+        }
+        table ,td ,tr{
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+		<h1>건강에 좋은 건강 식품</h1>
+		<table>
+			<tr>
+				<td>블루베리</td>
+			</tr>
+			<tr>
+				<td>귀리</td>
+			</tr>
+			<tr>
+				<td>토마토</td>
+			</tr>
+			<tr>
+				<td>시금치</td>
+			</tr>
+			<tr>
+				<td>적포도주</td>
+			</tr>
+			<tr>
+				<td>견과류</td>
+			</tr>
+			<tr>
+				<td>브로콜리</td>
+			</tr>
+			<tr>
+				<td>연어</td>
+			</tr>
+			<tr>
+				<td>마늘</td>
+			</tr>
+			<tr>
+				<td>녹차</td>
+			</tr>
+		</table>
+	</div>
+</body>
+</html> -->
+<!-- ============================================================================= -->
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ul.navi li:first-child{
+            border-top-left-radius: 1em;
+            border-bottom-left-radius: 1em;
+        }
+        ul.navi li:last-child{
+            border-top-right-radius: 1em;
+            border-bottom-right-radius: 1em;
+        }
+        ul.navi li{
+            list-style-type: none;
+            display: block;
+            width: 8em;
+            height: 3em;
+            text-align: center;
+            border: 1px solid black;
+            display: inline;
+            padding: 5px;
+            float: left;
+            padding-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <ul class="navi"> 
+            <li id="home"><a href="#">Home</a></li> 
+            <li id="html"><a href="#">HTML5</a></li> 
+            <li id="css"><a href="#">CSS3</a></li> 
+            <li id="jquery"><a href="#">JQuery</a></li> 
+        </ul> 
+    </div>
+</body>
+</html> -->
+<!-- ============================================================================= -->
