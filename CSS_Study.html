@@ -2135,4 +2135,189 @@
 </body>
 </html> -->
 <!-- ============================================================================= -->
-
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            float: left;
+            margin: 20px;
+        }
+        .rotatex img{transform: rotateX(30deg);}
+        #pers{perspective: 500px;}
+    </style>
+</head>
+<body>
+    <h4>원본 이미지</h4>
+    <div>
+        <img src="https://github.com/funnycom/html5-css3/blob/master/13/images/sunset.jpg?raw=true" alt="">
+    </div>
+    <div id="no-pers">
+        <div class="rotatex"><img src="https://github.com/funnycom/html5-css3/blob/master/13/images/sunset.jpg?raw=true" alt=""></div>
+    </div>
+    <div id="pers">
+        <div class="rotatex"><img src="https://github.com/funnycom/html5-css3/blob/master/13/images/sunset.jpg?raw=true" alt=""></div>
+    </div>
+</body>
+</html> -->
+<!-- ============================================================================= -->
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            perspective: 300px;
+            float: left;
+            margin-left: 30px;
+            margin-top: 30px;
+        }
+        div{
+            width: 200px;
+            height: 200px;
+        }
+        .box1{
+            background: #82cbd8;
+            transform: rotateY(45deg);
+        }
+        .box2{
+            background: #0d6079;
+            transform-origin: left top;
+            transform: rotateX(45deg);
+        }
+        #tr-style1{transform-style: flat;}
+        #tr-style2{transform-style: preserve-3d;}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box1" id="tr-style1">
+            <div class="box2"></div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="box1" id="tr-style2">
+            <div class="box2"></div>
+        </div>
+    </div>
+</body>
+</html> -->
+<!-- ============================================================================= -->
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            width: 200px;
+            height: 200px;
+        }
+        .container{
+            perspective: 300px;
+            float: left;
+            border: 1px solid black;
+            margin: 20px;
+        }
+        .box{
+            background: #82cbd8;
+            transform: rotateY(135deg);
+        }
+        #back1{backface-visibility: hidden;}
+        #back2{backface-visibility: visible;}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box" id="back1"><h1>BACK</h1></div>
+    </div>
+    <div class="container">
+        <div class="box" id="back2"><h1>BACK</h1></div>
+    </div>
+</body>
+</html> -->
+<!-- ============================================================================= -->
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            margin: 30px;
+            font-size: 100px;
+            text-align: center;
+        }
+        .tr1{
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+            border: 1px solid black;
+            transition-property: width, height;
+            transition-duration: 2s,1s;
+        }
+        .tr2{
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            border: 1px solid black;
+            transition-property: background-color, transfrom, width, height;
+            transition-duration: 2s, 3s;
+        }
+        .tr1:hover{
+            width: 200px;
+            height: 120px;
+        }
+        .tr2:hover{
+            width: 200px;
+            height: 200px;
+            background-color: #ff6e5f;
+            transform: rotate(180deg);
+        }
+    </style>
+</head>
+<body>
+    <div class="tr1">!</div>
+    <div class="tr2">!</div>
+</body>
+</html> -->
+<!-- ============================================================================= -->
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .tr1{
+            width: 200px;
+            height: 200px;
+            background: red;
+            border: 1px solid black;
+            transition: 2s ease-in;
+        }
+        .tr1:hover{
+            width: 100px;
+            height: 100px;
+            background-color: #ff635f;
+            transform: rotate(270deg);
+        }
+    </style>
+</head>
+<body>
+    <div class="tr1"></div>
+</body>
+</html> -->
+<!-- ============================================================================= -->
