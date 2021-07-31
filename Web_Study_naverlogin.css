@@ -1,0 +1,22 @@
+body{
+    text-align: center;
+}
+.naver{
+    color: green;
+    font-size: 60px;
+}
+
+.password,.id{
+    width: 400px;
+    height: 50px;
+    padding-left: 20px;
+    margin: 10px;
+}
+
+.button{
+    width: 425px;
+    height: 50px;
+    margin: 10px;
+    color: white;
+    background: green;
+}
