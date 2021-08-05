@@ -1,10 +1,8 @@
-# Web_Study
+#HTML
 
-##HTML
+## HTML 기본구조
 
-##HTML 기본구조
-
-'''
+```
 <!DOCTYPE html>
 <html>
     <head>
@@ -15,7 +13,7 @@
         <p>단락을 적는 부분</p>
     </body>
 </html>
-'''
+```
 
 <!DOCTYPE html> : 현재문서가 HTML5 문서라는것을 알려준다.
 
@@ -29,4 +27,4 @@
 
 ***
 
-##HTML 기본구조
+## HTML 기본구조
