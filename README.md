@@ -190,8 +190,152 @@
 </h1>
 ```
 
+## HTML 링크
 
+#### 웹페이지에는 다른 페이지나 사이트로 연결되는 하이퍼링크가 존재 합니다.
+#### 이러한 링크를 HTML에서는 `<a>` 태그로 표현합니다.
+`<a href="링크주소">HTML 링크</a>`
 
+#### `<a>` 태그에는 여러가지 속성이 있습니다.
+![target](https://user-images.githubusercontent.com/81845425/128633827-d44ee209-09cf-482d-966d-83d19103edc8.png)
 
+## HTML 이미지
 
+### 이미지의 삽입
 
+#### HTML문서에 이미지를 삽입할때는 `<img>` 태그를 사용합니다.
+`<img src="이미지주소" alt="대체문자열">`
+#### src는 이미지의 주소를 나타내고 alt는 이미지가 로딩될때 동안 나오는 글자 입니다.
+
+### 이미지의 크기 설정
+
+#### HTML에서 width와 hright를 사용하여 이미지의 크기를 설정할수 있습니다.
+#### width는 너비 hright는 높이를 나타냅니다.
+```
+<img src="/examples/images/img_flag.png" alt="html size" width="320" height="214">
+<img src="/examples/images/img_flag.png" alt="style size" style="width:320px; height:214px">
+```
+
+### 이미지에 링크설정
+
+#### 이미지에`<a>`태그를 이용하여 링크를 설정할 수 있습니다.
+```
+<a href="/html/intro" target="_blank">
+    <img src="/examples/images/img_flag.png" alt="flag" style="width:320px; height:214px">
+</a>
+```
+***
+## HTML 리스트
+
+### 순서가 없는 리스트
+
+#### 순서가 없는 리스트는 `<ul>` 태그로 시작하며 포함되는 각각의 요소는 `<li>`태그로 시작합니다.
+```
+<ul>
+    <li>가</li>
+    <li>나</li>
+    <li>다</li>
+</ul>
+```
+
+### 순서가 있는 리스트
+
+#### 순서가 있는 리스트는 `<ol>`태그로 시작하며 포함되는 각각의 리스트 요소는 `<li>`태그로 시작합니다.
+```
+<ol>
+    <li>가</li>
+    <li>나</li>
+    <li>다</li>
+</ol>
+```
+
+### 정의 리스트
+
+#### 정의리스트는 용어와 그에 대한 정의를 모아놓은 리스트로 `<dl>` 태그로 시작합니다.
+#### `<dt>` 태그에는 용어이름, `<dd>` 태그에는 용어에 대한 정의가 들어갑니다.
+```
+<dl>
+    <dt>용어1</dt>
+    <dd>- 설명</dd>
+    <dt>용어2</dt>
+    <dd>- 설명</dd>
+</dl>
+```
+***
+## HTML 표(태이블)
+
+### HTML 테이블
+
+#### `<table>`태그는 `<tr>`,`<th>`,`<td>`태그로 구성됩니다.
+#### 1.`<tr>` 테이블에서 열을 구분 해줍니다.
+#### 2.`<th>` 각 열의 제목을 나타냅니다.
+#### 3.`<td>` 열을 각각의 셀로 나누어 줍니다
+
+```
+<table>
+    <tr>
+        <th>참치</th>
+        <th>고래</th>      
+    </tr>
+    <tr>
+        <td>상어</td>
+        <td>문어</td>
+    </tr>
+    <tr>
+        <td>오징어</td>
+        <td>고등어</td>
+    </tr>
+</table>
+```
+
+### 테이블의 열 합치기
+
+#### `colspan` 속성을 이용하면 테이블의 열을 합칠수 있습니다.
+```
+<table>
+    <tr>
+        <td>참치</td>
+        <td colspan="2">고래</td>        
+    </tr>
+    <tr>
+        <td>상어</td>
+        <td>문어</td>        
+        <td>꽁치</td>
+    </tr>
+</table>
+```
+
+### 테이블의 행 합치기
+
+#### `rowspan` 속성을 사용하 행을 합칠수 있습니다.
+```
+<table>
+    <tr>
+        <td rowspan="2">상어</td>
+        <td>문어</td>        
+        <td>꽁치</td>
+    </tr>
+    <tr>
+        <td>고등어</td>        
+        <td>돌고래</td>
+    </tr>
+</table>
+```
+
+### 테이블의 캡션 설정
+
+#### `<caption>` 태그를 사용하면 테이블 상단에 제목이나 짧은 설명을 적을수 있습니다.
+<table>
+    <caption>해양 생물</caption>
+    <tr>
+        <td>참치</td>
+        <td>고래</td>
+        <td>날치</td>    
+    </tr>
+</table>
+***
+## iframe 요소
+
+### iframe 요소
+#### iftame 요소를 이용하면 웹페이지안에 또 다른 웹페이지를 삽입할 수 있습니다.
+`<iframe src="삽입할페이지주소"></iframe>`
