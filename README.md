@@ -341,3 +341,260 @@
 ### iframe 요소
 #### iftame 요소를 이용하면 웹페이지안에 또 다른 웹페이지를 삽입할 수 있습니다.
 `<iframe src="삽입할페이지주소"></iframe>`
+***
+## Form 요소
+
+### from 요소
+#### 웹페이지에서는 `form` 요소를 사용하여 사용자로 부터 입력을 받을수 있고 
+#### 사용자가 입력한데이터를 서버로 보낼때도 `form` 요소를 사용합니다.
+`<form action="처리할페이지주소" method="get|post"></form>`
+
+#### `action` 속성은 입력받은 데이터를 처리할 서버상의 스크립트 파일의 주소를 명시합니다.
+
+### method 속성
+
+#### method 속성을 통해 명시할 수 있는 form 요소의 전달방식은 `GET` 방식과 `POST` 방식으로 나눠집니다.
+
+#### `GET` 방식은 주소에 데이터를 추가하여 전달하는방식입니다. 
+##### 크기가 작으며 종요도가 낮은 정보를 보낼때 주로 사용합니다.
+
+#### `POST` 방식은 데이터를 별도로 첨부하여 전달하는 방식입니다.
+#### 데이터가 외부에 드러나지 않고 데이터 크기제한이 없어 보안성 및 활용성이 `GET` 방식보다 좋습니다
+
+### 다양한 input 요소
+
+#### HTML에는
+#### 1. 텍스트 입력(text)
+#### 2. 비밀번호 입력(password)
+#### 3. 라디오 버튼(radio)
+#### 4. 체크박스(checkbox)
+#### 5. 파일 선택(file)
+#### 6. 선택 입력(select)
+#### 7. 문장 입력(textarea)
+#### 8. 버튼 입력(button)
+#### 9. 전송 버튼(submit)
+#### 10. 필드셋(fieldset)
+#### 이러한 input 요소가 있습니다
+
+### 텍스트입력
+
+####  `<input>`태그의 type 속성값을 `"text"`로 설정하면
+#### 사용자로부터 한 줄의 텍스트를 입력받을 수 있습니다.
+```
+<form>
+    <input type="text" name="search">
+</form>
+```
+
+### 비밀번호 입력
+
+#### `<input>`태그의 type 속성값을 `"password"`로 설정하면
+#### 사용자로부터 비밀번호를 입력받을 수 있습니다.
+```
+<form>
+    사용자 : <br><input type="text"><br>
+    비밀번호 : <br><input type="password">
+</form>
+```
+
+### 라디오 버튼
+
+#### `<input>`태그의 type 속성값을 `"radio"`로 설정하면
+#### 사용자로부터 여러 개의 옵션 중에서 단 하나의 옵션만을 입력받을 수 있습니다.
+```
+<form>
+    <input type="radio"> HTML <br>
+    <input type="radio"> CSS <br>
+    <input type="radio"> JAVA <br>
+    <input type="radio"> C++
+</form>
+```
+
+### 체크박스
+#### `<input>`태그의 type 속성값을 `"checkbox"`로 설정하면
+#### 사용자로부터 여러 개의 옵션 중에서 다수의 옵션을 입력받을 수 있습니다.
+```
+<form>
+    <input type="checkbox"> HTML <br>
+    <input type="checkbox"> CSS <br>
+    <input type="checkbox"> JAVA <br>
+    <input type="checkbox"> C++
+</form>
+```
+
+### 파일선택
+#### `<input>`태그의 type 속성값을 `"file"`로 설정하면
+#### 사용자로부터 파일을 전송받을 수 있습니다.
+```
+<form>
+    <input type="file" name="upload_file" accept="image/*">
+</form>
+```
+#### accept를 이용하여 파일의 종류를 명시할수 있습니다.
+
+### 선택 입력
+#### `select` 요소는 여러 개의 옵션이 드롭다운 리스트로 되어 있으며
+#### 그중에서 단 하나의 옵션만을 입력받을 수 있습니다.
+```
+<select name="fruit">
+    <option value="apple"> 사과
+    <option value="orange" selected> 귤
+    <option value="strawberry"> 딸기
+    <option value="peach"> 복숭아
+</select>
+```
+
+### 문장입력
+
+#### `textarea` 요소는 사용자로부터 여러 줄의 텍스트를 입력받을 수 있습니다.
+```
+<textarea name="message" rows="5" cols="30">
+    여기에 적으세요.
+</textarea>
+```
+#### `rows` 속성과 `cols` 속성을 이용하여 `textarea` 요소의 크기를 자유롭게 지정할 수 있습니다.
+
+### 버튼
+
+#### `button` 요소는 사용자가 누를수 있는 버튼을 나타냅니다.
+```
+<button type="button">
+    버튼
+</button>
+```
+### 전송 버튼
+#### `<input>`태그의 type 속성값을 `"submit"`으로 설정하면
+#### 사용자로부터 입력받은 데이터를 서버의 폼 핸들러로 제출하는 버튼을 만들 수 있습니다.
+```
+<form>
+    <input type="submit" value="전송">
+</form> 
+```
+
+### 필드셋
+#### `fieldset` 요소는 form 요소와 관련된 데이터들을 하나로 묶어주는 역할을 합니다.
+#### `legend` 요소는 `fieldset` 요소 안에서만 사용할 수 있으며 `fieldset` 요소의 제목을 나타냅니다.
+```
+<form>
+    <fieldset>
+        <legend>입력 양식</legend>
+        이름 : <br>
+        <input type="text" name="username"><br>
+        이메일 : <br>
+        <input type="text" name="email"><br><br>
+        <input type="submit" value="전송">
+    </fieldset>
+</form>
+```
+***
+## input 요소의 속성
+
+### value 속성
+#### `value` 속성은 `input` 요소의 입력 필드에 나타나는 초기값을 설정합니다.
+```
+<form>
+    이름 : <br><input type="text" name="student_name" value="ex) 홍길동"><br>
+    학번 : <br><input type="text" name="student_id" value="ex)1111"><br>
+    학과 : <br><input type="text" name="department" value="ex)컴퓨터공학과"><br>
+</form>
+```
+
+### readonly 속성
+
+#### `readonly` 속성은 사용자가 입력 필드를 볼 수는 있으나, 수정할 수는 없도록 설정합니다.
+```
+<form>
+    학과 : <br><input type="text" name="department" value="컴퓨터공학과" readonly><br>
+</form>
+```
+### disabled 속성
+
+#### `disabled` 속성은 사용자가 입력필드를 아예 사용할수 없도록 설정합니다.
+```
+<form>
+    학과 : <br><input type="text" name="department" value="컴퓨터공학과" disabled><br>
+</form>
+```
+
+### maxlength 속성
+
+#### `maxlength` 속성은 입력필드에 입력할수 있는 최대 문자길이를 설정합니다.
+```
+<form>
+    이름 : <br><input type="text" value="홍길동" maxlength="5"><br>
+</form>
+```
+
+### size 속성
+
+#### `size` 속성은 입력필드에 보여지는 input 요소의 크기를 설정합니다.
+```
+<form>
+    size30 : <br><input type="text"  size="30"><br>
+    기본 : <br><input type="text" ><br>
+</form>
+```
+***
+## 의미 요소
+#### 의미요소란 그 자체로 의미를 가지고 있는 요소를 가리킵니다.
+#### 즉 요소가 자기 스스로 브라우저와 개발자 모두에게 자신이 사용된 의미를 명확히 전달해주는 요소를 의미합니다.
+
+### 의미 요소의 종류
+![](http://tcpschool.com/lectures/img_html_html5_layout.png)
+
+### header 요소
+
+#### `header` 요소는 HTML 문서나 섹션 부번에 대한 헤더를 정의합니다.
+```
+<header>
+    <h1>전체 문서에 대한 헤더(header)입니다.</h1>
+</header>
+<section>
+    <header>
+        <h2>섹션 부분에 대한 헤더(header)입니다.</h2>
+        <p>헤더 부분에 들어간 단락입니다.</p>
+    </header>
+</section>
+```
+
+### nav 요소
+
+#### `nav` 요소는 HTML 문서 사이를 탐색할 수 있는 링크의 집합을 정의합니다
+```
+<nav>
+    <a href="/html/html5_element_semantic">의미 요소</a> |
+    <a href="/htmlhtml5_element_form/">Forms 요소</a> |
+    <a href="/html/html5_element_inputtype">Input 요소</a>
+</nav>
+```
+
+### section 요소
+
+#### `section` 요소는 HTML 문서에서 섹션 부분을 정의합니다.
+#### HTML 문서의 전체적인 내용과 관련이 있는 콘텐츠들의 집합을 의미합니다.
+```
+<section>
+    <h2>섹션 영역입니다.</h2>
+</section>
+```
+
+### article 요소
+
+#### `article` 요소는 HTML 문서에서 독립적인 하나의 기사 부분을 정의합니다.
+```
+<article>
+    <h2>기사 영역입니다.</h2>
+</article>
+```
+
+### footer 요소
+
+#### `footer` 요소는 HTML 문서나 섹션 부분에 대한 푸터를 정의합니다
+#### 푸터에는 사이트의 작성자, 그에 따른 저작권 정보, 연락처등을 명시합니다.
+```
+<footer>
+    <p>전체 문서에 대한 푸터(footer)입니다.</p>
+    <p>Copyright 2021. 지은이 000.</p>
+    <p>연락처 : 010-1234-5678</p>
+</footer>
+```
