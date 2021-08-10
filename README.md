@@ -373,6 +373,9 @@
 #### 7. 문장 입력(textarea)
 #### 8. 버튼 입력(button)
 #### 9. 전송 버튼(submit)
+#### 10. datalist 요소
+#### 11. keygen 요소
+#### 13. output 요소
 #### 10. 필드셋(fieldset)
 #### 이러한 input 요소가 있습니다
 
@@ -486,6 +489,47 @@
     </fieldset>
 </form>
 ```
+
+### datalist 요소
+
+#### datalist 요소는 input 요소에 대해 미리 정의된 옵션 리스트를 명시해 주는 요소입니다.
+```
+<form>
+    <input list="lectures" name="lecture">
+        <datalist id="lectures">
+            <option value="HTML">
+            <option value="CSS">
+            <option value="JAVA">
+            <option value="C++">
+        </datalist>
+    <input type="submit" value="전송">
+</form>
+```
+
+### keygen 요소
+
+#### keygen 요소의 목적은 사용자가 인증할 수 있는 안전한 방법을 제공하는 것입니다.
+```
+<form>
+    사용자 : <br>
+    <input type="text" name="username"><br>
+    암호화방법 : <br>
+    <keygen name="security"><br>
+</form>
+```
+
+### output 요소
+
+#### output 요소는 스크립트 등으로 실행된 계산의 결과를 바로 표시해주는 요소입니다.
+```
+<form oninput="total.value=parseInt(value01.value)/parseInt(value02.value)">
+    <input type="number" id="value01" name="input01" value="20">
+    /
+    ( 0 <input type="range" id="value02" name="input02" value="50" min="0" max="100" >100 )
+    =
+    <output name="total" for="value01 value02"></output><br><br>
+</form>
+```
 ***
 ## input 요소의 속성
 
@@ -498,7 +542,6 @@
     학과 : <br><input type="text" name="department" value="ex)컴퓨터공학과"><br>
 </form>
 ```
-
 ### readonly 속성
 
 #### `readonly` 속성은 사용자가 입력 필드를 볼 수는 있으나, 수정할 수는 없도록 설정합니다.
