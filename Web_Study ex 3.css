@@ -1,0 +1,66 @@
+body{
+    font-family: "맑은 고딕","고딕", "굴림";
+}
+#wrapper{
+    width: 800px;
+    margin: 0 auto;
+}
+header{
+    background-color: #f46075;
+    width: 800px;
+    height: 150px;
+}
+header ul{
+    list-style: none;
+}
+header ul li{
+    display: inline;
+    font-weight: bold;
+    float: left;
+    margin: 20px;
+    margin-top: 80px;
+
+}
+
+header ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+section{
+    width: 580px;
+    float: left;
+    padding: 5px;
+}
+
+section article{
+    width: 250px;
+    height: 267px;
+    border: 1px solid black;
+    margin: 5px;
+    padding: 10px;
+    float: left;
+}
+
+aside{
+    border: 1px solid black;
+    width: 200px;
+    height: auto;
+    float: right;
+    margin-top: 80px;
+}
+
+footer{
+    clear: both;
+    width: 800px;
+    height: 50px;
+    background-color: #333;
+    color: white;
+    margin: auto;
+}
+
+footer p{
+    text-align: center;
+    padding: 15px;
+}
+
