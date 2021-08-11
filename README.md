@@ -577,6 +577,68 @@
     기본 : <br><input type="text" ><br>
 </form>
 ```
+
+## input 요소의 타입
+
+### 1. 숫자 입력(number)
+
+#### `<input>`태그의 type 속성값을 `"number"`로 설정하면
+#### 사용자가 숫자를 입력할 수 있도록 해줍니다.
+`<input type="number" min="1" max="9">`
+
+### 2. 입력 범위 지정(range)
+
+#### `<input>`태그의 type 속성값을 `"range"`로 설정하면
+#### 사용자가 일정 범위 안의 값만을 입력할 수 있도록 해줍니다.
+`0 <input type="range"  min="1" max="9"> 9`
+
+### 3. 색상 입력(color)
+
+#### `<input>`태그의 type 속성값을 `"color"`로 설정하면
+#### 사용자가 색상을 입력할 수 있도록 해줍니다.
+`<input type="color" value="#CC6600">`
+
+### 4. 날짜 입력(date)
+
+#### `<input>`태그의 type 속성값을 `"date"`로 설정하면
+#### 사용자가 날짜를 입력할 수 있도록 해줍니다.
+`<input type="date">`
+
+### 5. 시간 입력(time)
+
+#### `<input>`태그의 type 속성값을 `"time"`로 설정하면
+#### 사용자가 시간을 입력할 수 있도록 해줍니다.
+`<input type="time">`
+
+### 6. 날짜와 시간 입력(datetime-local)
+
+#### `<input>`태그의 type 속성값을 `"datetime-local"`로 설정하면
+#### 사용자가 날짜와 시간을 입력할 수 있도록 해줍니다.
+`<input type="datetime-local">`
+
+### 7. 연도와 월 입력(month)
+
+#### `<input>`태그의 type 속성값을 `"month"`로 설정하면
+#### 사용자가 연도와 월을 입력할 수 있도록 해줍니다.
+`<input type="month">`
+
+### 8. 연도와 주 입력(week)
+
+#### `<input>`태그의 type 속성값을 `"week"`로 설정하면
+#### 사용자가 연도와 몇 번째 주인지를 입력할 수 있도록 해줍니다.
+`<input type="week">`
+
+### 9. 이메일 입력(email)
+
+#### `<input>`태그의 type 속성값을 `"email"`로 설정하면
+#### input 요소는 사용자가 email 주소를 입력할 수 있도록 해줍니다.
+
+### 10. URL 주소 입력(url)
+
+#### `<input>`태그의 type 속성값을 `"url"`로 설정하면
+#### 사용자가 URL 주소를 입력할 수 있도록 해줍니다.
+`<input type="url">`
+
 ***
 ## 의미 요소
 #### 의미요소란 그 자체로 의미를 가지고 있는 요소를 가리킵니다.
