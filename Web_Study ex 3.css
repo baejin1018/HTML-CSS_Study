@@ -9,6 +9,9 @@ header{
     background-color: #f46075;
     width: 800px;
     height: 150px;
+    background-image: url(https://github.com/funnycom/html5-css3/blob/master/10/images/nav2.png?raw=true);
+    background-repeat: no-repeat;
+    background-position: right center;
 }
 header ul{
     list-style: none;
@@ -64,3 +67,21 @@ footer p{
     padding: 15px;
 }
 
+.at1, .at2, .at3, .at4{
+    transition: 2s;
+}
+.at1:hover{
+    background-color: rgb(255, 253, 153);
+}
+
+.at2:hover{
+    background-color: rgb(255, 153, 250);
+}
+
+.at3:hover{
+    background-color: rgb(153, 194, 255);
+}
+
+.at4:hover{
+    background-color: rgb(173, 255, 153);
+}
