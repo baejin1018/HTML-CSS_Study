@@ -1,4 +1,4 @@
-<img src="http://www.logobird.com/wp-content/uploads/2011/01/New-HTML5_Logo.png" width="1000" height="400">
+<img src="http://www.logobird.com/wp-content/uploads/2011/01/New-HTML5_Logo.png" width="100%" height="40%">
 
 # HTML 시작
 
