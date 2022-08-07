@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.liquid {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #183954;
+}
+
+.liquid h2 {
+  position: absolute;
+  font-size: 26vw;
+}
+
+.liquid h2:nth-child(1) {
+  color: #fff;
+  text-shadow: -2px 2px 0px #183954, -4px 4px 0px #183954, -6px 6px 0px #183954,
+    -8px 8px 0px #183954, -18px 18px 20px rgba(0, 0, 0, 0.5),
+    -18px 18px 50px rgba(0, 0, 0, 0.5);
+}
+
+.liquid h2:nth-child(2) {
+  opacity: 0.5;
+  color: #2196f3;
+  animation: animate 3s ease-in-out infinite;
+}
+
+.liquid h2:nth-child(3) {
+  opacity: 0.5;
+  color: #2196f3;
+  animation: animate 6s ease-in-out infinite;
+}
+
+.liquid h2:nth-child(4) {
+  color: #2196f3;
+  animation: animate 4s ease-in-out infinite;
+}
+
+@keyframes animate {
+  0%,
+  100% {
+    clip-path: polygon(
+      0 51%,
+      16% 44%,
+      36% 45%,
+      48% 52%,
+      59% 62%,
+      76% 62%,
+      87% 52%,
+      100% 47%,
+      100% 100%,
+      0% 99%
+    );
+  }
+  50% {
+    clip-path: polygon(
+      0 68%,
+      16% 73%,
+      34% 77%,
+      51% 73%,
+      64% 57%,
+      75% 49%,
+      87% 43%,
+      100% 47%,
+      100% 100%,
+      0% 99%
+    );
+  }
+}
