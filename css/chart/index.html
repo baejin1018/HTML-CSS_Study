@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #chart {
+        height: 200px;
+        width: 200px;
+        border-radius: 50%;
+        background: conic-gradient(
+          brown 0%,
+          black 0% 0.55%,
+          blue 0.55% 6.08%,
+          green 6.08% 13.68%,
+          yellow 13.68% 23.27%,
+          orange 23.27% 40.47%,
+          red 40.47%
+        );
+      }
+      #box {
+        position: absolute;
+        z-index: 1;
+        width: 130px;
+        height: 130px;
+        background-color: bisque;
+        border-radius: 50%;
+      }
+      #container {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="container">
+      <div id="box"></div>
+      <div id="chart"></div>
+    </div>
+  </body>
+</html>
